@@ -1,20 +1,22 @@
-import React from 'react';
-import logo from '../../../public/assets/images/logo.png';
-// import whiteLogo from '../../../public/logo_white_yellow.png';
+'use client';
 
+import React, { useEffect } from 'react';
+import logo from '../../../public/logo.png';
 import Image from 'next/image';
 import styles from './navbar.module.css';
 import Link from 'next/link';
 
 const Navbar = () => {
   const NavlinkArr = ['Home', 'About', 'Services', 'Contacts'];
+
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => console.log(e));
+  }, []);
   return (
-    <div>
+    <div className={styles.nav_container}>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <div className={styles.logo_image}>
-            <Image className="logo" src={logo} alt="logo" />
-          </div>
+          <Image className="logo" width="50" src={logo} alt="logo" />
           <p className={styles.name}>PROMOVIZE</p>
         </div>
 

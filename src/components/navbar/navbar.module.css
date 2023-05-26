@@ -1,27 +1,26 @@
 /* LOGO */
 
+.nav_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 0;
+  background: white;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80vw;
   margin: 0 auto;
-  padding: 2rem 0;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.logo_image {
-  width: 3rem;
-  object-fit: cover;
-}
-
-.logo_image Image {
-  width: 100%;
 }
 
 .name {
