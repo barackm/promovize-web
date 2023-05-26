@@ -7,12 +7,7 @@ import styles from './navbar.module.css';
 import Link from 'next/link';
 
 const Navbar = () => {
-  const [scroll, setScroll] = useState(false);
   const NavlinkArr = ['Home', 'About', 'Services', 'Contacts'];
-
-  useEffect(() => {
-    window.addEventListener('scroll', (e) => setScroll(true));
-  }, []);
 
   return (
     <div className={styles.nav_container}>
