@@ -1,0 +1,40 @@
+/* LOGO */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo_image {
+  width: 3rem;
+  object-fit: cover;
+}
+
+.logo_image Image {
+  width: 100%;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navlink {
+  font-size: 1.4rem;
+}

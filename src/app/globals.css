@@ -9,6 +9,6 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, #6786dd) #1b45b9;
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(to bottom, transparent, #6786dd) #1b45b9; */
 }
