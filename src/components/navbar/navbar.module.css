@@ -8,6 +8,21 @@
   padding: 2rem 0;
   background: white;
   border-bottom: 1px solid #e8e8e8e3;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.nav_active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 0;
+  background: #1b45b9;
+  transition: all;
+  transition-duration: 0.5s;
+  border-bottom: 1px solid #e8e8e8e3;
+  color: white;
 }
 
 .navbar {
