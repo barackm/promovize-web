@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { BsApple } from 'react-icons/bs';
 import { SiGoogleplay } from 'react-icons/si';
 import localFont from 'next/font/local';
-import phone from '../../../public/Group 1.png';
+import phone from '../../../public/image.png';
 
 const myfonts = localFont({
   src: '../../app/fonts/fonts/SF-Pro-Rounded-Light.otf',
@@ -17,7 +17,7 @@ const Header = () => {
     <div className={styles.header_container}>
       <div className={styles.description}>
         <h1 className={myfonts.className}>
-          Transform your social media game and engage your audience.
+          Transform your social media game <br /> and engage your audience.
         </h1>
         <p>
           Elevate your online presence with Promovize! <br /> Sign up now and
