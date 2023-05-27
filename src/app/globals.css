@@ -14,6 +14,16 @@ body {
   /* background: linear-gradient(to bottom, transparent, #6786dd) #1b45b9; */
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 60vw;
+}
+
 .logo {
   display: flex;
   align-items: center;

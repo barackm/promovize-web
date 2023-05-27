@@ -11,7 +11,7 @@
 }
 
 .footer_container {
-  width: 70vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +32,7 @@
 .email_input {
   border: none;
   outline: none;
-  width: 12rem;
+  width: 14rem;
   padding: 10.5px 16px 10.5px 16px;
   border-radius: 8px;
   background: rgb(246, 246, 247);

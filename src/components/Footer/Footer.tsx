@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '../../../public/logo.png';
-import styles from './footer.module.css';
+import styles from './footer.module.scss';
 import { FiTwitter } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 import { FiInstagram } from 'react-icons/fi';

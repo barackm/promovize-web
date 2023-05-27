@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './header.module.css';
+import styles from './header.module.scss';
 import { BsApple } from 'react-icons/bs';
 import { SiGoogleplay } from 'react-icons/si';
 import localFont from 'next/font/local';
@@ -14,11 +14,12 @@ const Header = () => {
   return (
     <div className={styles.header_container}>
       <div className={styles.description}>
-        <h1 className={myfonts.className}>Discover the power of smile</h1>
+        <h1 className={myfonts.className}>
+          Transform your social media game and engage your audience.
+        </h1>
         <p>
-          Zero code, maximum speed. Make professional sites easy, fast and fun
-          <br />
-          while delivering best-in-class SEO, performance.
+          Elevate your online presence with Promovize! <br /> Sign up now and
+          take control of your company’s social media game.
         </p>
       </div>
       <div className={styles.btns}>
