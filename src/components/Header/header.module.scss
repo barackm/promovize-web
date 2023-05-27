@@ -47,6 +47,13 @@
   border-radius: 50px;
 }
 
+.btn:hover {
+  background-color: var(--background-start-rgb);
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
 .btn p {
   color: white;
   font-weight: 800;

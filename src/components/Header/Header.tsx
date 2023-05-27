@@ -1,9 +1,11 @@
 'use client';
 
 import styles from './header.module.scss';
+import Image from 'next/image';
 import { BsApple } from 'react-icons/bs';
 import { SiGoogleplay } from 'react-icons/si';
 import localFont from 'next/font/local';
+import phone from '../../../public/Group 1.png';
 
 const myfonts = localFont({
   src: '../../app/fonts/fonts/SF-Pro-Rounded-Light.otf',
@@ -24,18 +26,15 @@ const Header = () => {
       </div>
       <div className={styles.btns}>
         <button type="button" className={styles.btn}>
-          <BsApple
-            style={{ fontSize: '1.5rem', color: 'white', background: 'black' }}
-          />
+          <BsApple style={{ fontSize: '1.5rem', color: 'white' }} />
           <p>App Store</p>
         </button>
         <button type="button" className={styles.btn}>
-          <SiGoogleplay
-            style={{ fontSize: '1.5rem', color: 'white', background: 'black' }}
-          />
+          <SiGoogleplay style={{ fontSize: '1.5rem', color: 'white' }} />
           <p>Google Play</p>
         </button>
       </div>
+      <Image alt="product" width="500" height="600" src={phone} />
     </div>
   );
 };
