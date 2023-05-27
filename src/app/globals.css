@@ -38,3 +38,10 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+}

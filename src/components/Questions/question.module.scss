@@ -32,7 +32,6 @@
 }
 
 .question {
-  display: flex;
   border-bottom: $border;
   &:last-child {
     border-bottom: none;
@@ -62,4 +61,15 @@
 
 .btn_plus {
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .questions {
+    width: 100%;
+    padding: 0;
+  }
+
+  .questions_container h2 {
+    text-align: center;
+  }
 }

@@ -26,11 +26,11 @@ const Header = () => {
       </div>
       <div className={styles.btns}>
         <button type="button" className={styles.btn}>
-          <BsApple style={{ fontSize: '1.5rem', color: 'white' }} />
+          <BsApple className={styles.icon} />
           <p>App Store</p>
         </button>
         <button type="button" className={styles.btn}>
-          <SiGoogleplay style={{ fontSize: '1.5rem', color: 'white' }} />
+          <SiGoogleplay className={styles.icon} />
           <p>Google Play</p>
         </button>
       </div>

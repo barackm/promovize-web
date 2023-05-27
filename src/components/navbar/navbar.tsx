@@ -6,6 +6,7 @@ import whitelogo from '../../../public/logo_white_yellow.png';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
 import Link from 'next/link';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
   const NavlinkArr = ['Home', 'About', 'Services', 'Contacts'];
@@ -44,6 +45,9 @@ const Navbar = () => {
             );
           })}
         </ul>
+        <button className={styles.menu}>
+          <AiOutlineMenu className={styles.menu_icon} />
+        </button>
       </nav>
     </div>
   );

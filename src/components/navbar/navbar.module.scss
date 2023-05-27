@@ -47,9 +47,44 @@
 .navlinks {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .navlink {
   font-size: 1.2rem;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navlinks {
+    gap: 1rem;
+  }
+
+  .navbar {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navlinks {
+    display: none;
+  }
+
+  .menu {
+    display: initial;
+  }
+
+  .menu_icon {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 1.3rem;
+  }
 }
