@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../../public/logo.png';
 import whitelogo from '../../../public/logo_white_yellow.png';
 import Image from 'next/image';
@@ -10,6 +10,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
   const NavlinkArr = ['Home', 'About', 'Services', 'Contacts'];
+  const navContainerRef= useRef<any>(null);
 
   const [scroll, setScroll] = useState(false);
 
@@ -22,18 +23,20 @@ const Navbar = () => {
       }
     });
   }, []);
+
   return (
-    <div className={scroll ? styles.nav_active : styles.nav_container}>
+    <div ref={navContainerRef} className={`${styles.nav_container} ${scroll ? styles.nav_active : ""}`}>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
+          <div className={styles.logoWrapper}>
           <Image
-            className="logo"
-            width="50"
+            className={styles.logoImage}
             priority
             src={scroll ? whitelogo : logo}
             alt="logo"
-          />
+            />
           <p className={styles.name}>PROMOVIZE</p>
+            </div>
         </div>
 
         <ul className={styles.navlinks}>
@@ -45,7 +48,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <button className={styles.menu}>
+        <button type='button' title='menu' className={styles.menu}>
           <AiOutlineMenu className={styles.menu_icon} />
         </button>
       </nav>

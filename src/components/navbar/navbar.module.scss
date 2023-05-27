@@ -10,20 +10,15 @@
   border-bottom: 1px solid #e8e8e8e3;
   transition: all;
   transition-duration: 0.5s;
+
+  &.nav_active {
+    padding: 0.8rem 0;
+    background: var(--background-start-rgb);
+    color: white;
+  }
 }
 
-.nav_active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0.8rem 0;
-  background: var(--background-start-rgb);
-  transition: all;
-  transition-duration: 0.5s;
-  border-bottom: 1px solid #e8e8e8e3;
-  color: white;
-}
+
 
 .navbar {
   display: flex;
@@ -36,13 +31,27 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  position: relative;
+
+  .logoWrapper {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .logoImage {
+      width: 40px;
+    }
+  }
+
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
-.name {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
+
 
 .navlinks {
   display: flex;
