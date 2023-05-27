@@ -6,8 +6,40 @@ import { FiPlus } from 'react-icons/fi';
 import { Collapse } from '@mui/material';
 
 const Question = () => {
-  const [text, setText] = useState(false);
   const [activeQuestions, setActiveQuestions] = useState<number[]>([]);
+
+  const questionStore = [
+    {
+      id: 0,
+      question: 'What kind of services do you provide ?',
+      description:
+        'Company will perform the Services described in each Quote/Proposal. Company retains ownership of any portion of Company developed tools or products that are used in or form a part of computer programs or documentation resulting from a particular service provided. Company reserves the right to market to other Clients the skills, designs, processes, procedures, formulas,',
+    },
+    {
+      id: 1,
+      question: 'What kind of services do you provide ?',
+      description:
+        'Company will perform the Services described in each Quote/Proposal. Company retains ownership of any portion of Company developed tools or products that are used in or form a part of computer programs or documentation resulting from a particular service provided. Company reserves the right to market to other Clients the skills, designs, processes, procedures, formulas,',
+    },
+    {
+      id: 2,
+      question: 'What kind of services do you provide ?',
+      description:
+        'Company will perform the Services described in each Quote/Proposal. Company retains ownership of any portion of Company developed tools or products that are used in or form a part of computer programs or documentation resulting from a particular service provided. Company reserves the right to market to other Clients the skills, designs, processes, procedures, formulas,',
+    },
+    {
+      id: 3,
+      question: 'What kind of services do you provide ?',
+      description:
+        'Company will perform the Services described in each Quote/Proposal. Company retains ownership of any portion of Company developed tools or products that are used in or form a part of computer programs or documentation resulting from a particular service provided. Company reserves the right to market to other Clients the skills, designs, processes, procedures, formulas,',
+    },
+    {
+      id: 4,
+      question: 'What kind of services do you provide ?',
+      description:
+        'Company will perform the Services described in each Quote/Proposal. Company retains ownership of any portion of Company developed tools or products that are used in or form a part of computer programs or documentation resulting from a particular service provided. Company reserves the right to market to other Clients the skills, designs, processes, procedures, formulas,',
+    },
+  ];
 
   const handleCollapseOrExtend = (id: number) => {
     const exist = activeQuestions.includes(id);
@@ -18,8 +50,6 @@ const Question = () => {
       setActiveQuestions((prev) => [...prev, id]);
     }
   };
-
-  console.log(activeQuestions);
   return (
     <div className={styles.questions_container}>
       <p>HELP CENTER</p>
@@ -30,45 +60,26 @@ const Question = () => {
         FAQ section to find answers to your questions.
       </p>
       <div className={styles.questions}>
-        <div className={styles.question}>
-          <div className={styles.question_description}>
-            <button
-              className={styles.btn}
-              onClick={() => handleCollapseOrExtend(0)}
-            >
-              <FiPlus className={styles.btn_plus} />
+        {questionStore.map((item) => {
+          return (
+            <div key={item.id} className={styles.question}>
+              <div className={styles.question_description}>
+                <button
+                  className={styles.btn}
+                  onClick={() => handleCollapseOrExtend(item.id)}
+                >
+                  <FiPlus className={styles.btn_plus} />
 
-              <h3>What kind services do you offer?</h3>
-            </button>
+                  <h3>{item.question}</h3>
+                </button>
 
-            <Collapse in={activeQuestions.includes(0)}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-                explicabo! Officia, perspiciatis voluptatibus possimus quod
-                expedita ipsa vel facere nostrum.
-              </p>
-            </Collapse>
-          </div>
-        </div>
-        <div className={styles.question}>
-          <div className={styles.question_description}>
-            <button
-              className={styles.btn}
-              onClick={() => handleCollapseOrExtend(1)}
-            >
-              <FiPlus className={styles.btn_plus} />
-
-              <h3>What kind services do you offer?</h3>
-            </button>
-            <Collapse in={activeQuestions.includes(1)}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-                explicabo! Officia, perspiciatis voluptatibus possimus quod
-                expedita ipsa vel facere nostrum.
-              </p>
-            </Collapse>
-          </div>
-        </div>
+                <Collapse in={activeQuestions.includes(item.id)}>
+                  <p>{item.description}</p>
+                </Collapse>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
