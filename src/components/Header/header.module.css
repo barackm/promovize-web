@@ -18,11 +18,13 @@
 
 .description h1 {
   font-size: 4rem;
+  color: var(--primary-text-color-rgb);
 }
 
 .description p {
   font-size: 1.2rem;
   text-align: center;
+  color: var(--secondary-text-color-rgb);
 }
 
 .btns {

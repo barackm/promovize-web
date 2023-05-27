@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   padding: 1.5rem 0;
-  background: #1b45b9;
+  background: var(--background-start-rgb);
   transition: all;
   transition-duration: 0.5s;
   border-bottom: 1px solid #e8e8e8e3;

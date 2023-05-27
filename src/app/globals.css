@@ -5,10 +5,22 @@
 :root {
   --foreground-rgb: #1b45b9;
   --background-start-rgb: #1b45b9;
-  --background-end-rgb: #;
+  --primary-text-color-rgb: rgb(29, 30, 34);
+  --secondary-text-color-rgb: rgb(122, 126, 135);
 }
 
 body {
   /* color: rgb(var(--foreground-rgb)); */
   /* background: linear-gradient(to bottom, transparent, #6786dd) #1b45b9; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
