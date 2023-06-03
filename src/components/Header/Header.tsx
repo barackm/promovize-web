@@ -34,7 +34,13 @@ const Header = () => {
           <p>Google Play</p>
         </button>
       </div>
-      <Image alt="product" width="500" height="600" src={phone} />
+      <Image
+        alt="product"
+        className={styles.img}
+        width="500"
+        height="600"
+        src={phone}
+      />
     </div>
   );
 };
