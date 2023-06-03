@@ -1,4 +1,5 @@
 .footer {
+  width: 100vw;
   display: flex;
   justify-content: center;
   padding: 1.2rem 0;
@@ -11,7 +12,7 @@
 }
 
 .footer_container {
-  width: 100%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,12 +53,14 @@
   color: darkgray;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1240px) {
   .footer_container {
     gap: 2rem;
     flex-direction: column;
   }
+}
 
+@media screen and (max-width: 768px) {
   .footer_description {
     flex-direction: column;
     gap: 2rem;

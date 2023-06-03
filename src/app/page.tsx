@@ -8,11 +8,9 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="main">
-        <Header />
-        <Question />
-        <Footer />
-      </div>
+      <Header />
+      <Question />
+      <Footer />
     </main>
   );
 }
